@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Vanilla JS - Contact book</title>
+</head>
+<body>
+
+    <div class="box-navbar">
+        <div class="menu-navbar">
+            <button id="register-contact">Cadastrar Contato</button>
+        </div>
+    </div>
+
+    <div class="box-container">
+        <div class="title">
+            Seja bem vindo - Contact book
+        </div>
+
+        <div class="list-items">
+            <table class="table-full">
+                <thead>
+                    <tr>
+                    <th>Nome Completo</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Profissão</th>
+                    <th>Empresa</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
+                    <th>Data de Nascimento</th>
+                    <th>Observações</th>
+                    <th>deletar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Nome Completo">João da Silva</td>
+                        <td data-label="Email">joao.silva@example.com</td>
+                        <td data-label="Telefone">(11) 91234-5678</td>
+                        <td data-label="Profissão">Desenvolvedor</td>
+                        <td data-label="Empresa">Empresa Exemplo Ltda</td>
+                        <td data-label="Cidade">São Paulo</td>
+                        <td data-label="Estado">SP</td>
+                        <td data-label="Data de Nascimento">1990-05-14</td>
+                        <td data-label="Observações">Contato fictício</td>
+                        <td data-label="Ações" id="edit-delete">Editar | Excluir</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
