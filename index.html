@@ -15,18 +15,20 @@
     </div>
 
     <div class="box-modal hidden">
-        <form action="" id="formModal">
+        <form action="" id="formModal" novalidate>
             <div class="inputs">
-                <p>Nome: <input type="text" class="name"></p>
-                <label for="" class="closed-modal">X</label>
-                <p>Email: <input type="text" class="email"></p>
-                <p>Telefone: <input type="text" class="telphone"></p>
-                <p>Profissão: <input type="text" class="job"></p>
-                <p>Empresa: <input type="text" class="enterprise"></p>
-                <p>Cidade: <input type="text" class="city"></p>
-                <p>Estado: <input type="text" class="state"></p>
-                <p>Data de Nascimento: <input type="text" class="datebirth"></p>
-                <p>Observações: <input type="text" class="observation"></p>
+                <button type="button" class="closed-modal" aria-label="Fechar">X</button>
+                <p><label>Nome: <input type="text" class="name" required></label></p>
+                <p><label>Email: <input type="email" class="email" required></label></p>
+                <p><label>Telefone: <input type="tel" class="telphone" required></label></p>
+                <p><label>Profissão: <input type="text" class="job"></label></p>
+                <p><label>Empresa: <input type="text" class="enterprise"></label></p>
+                <p><label>CEP: <input type="text" class="cep" inputmode="numeric" maxlength="9"></label> <small class="cep-status" aria-live="polite"></small></p>
+                <p><label>Cidade: <input type="text" class="city"></label></p>
+                <p><label>Estado: <input type="text" class="state"></label></p>
+                <p><label>Data de Nascimento: <input type="date" class="datebirth"></label></p>
+                <p><label>Observações: <input type="text" class="observation"></label></p>
+                <p class="form-error" aria-live="polite"></p>
                 <button id="data-send">Enviar dados</button>
             </div>
         </form>
@@ -38,6 +40,7 @@
         </div>
 
         <div class="list-items">
+            <input type="search" class="search" placeholder="Buscar contato..." aria-label="Buscar contato">
             <table class="table-full">
                 <thead>
                     <tr>
@@ -46,27 +49,15 @@
                     <th>Telefone</th>
                     <th>Profissão</th>
                     <th>Empresa</th>
+                    <th>CEP</th>
                     <th>Cidade</th>
                     <th>Estado</th>
                     <th>Data de Nascimento</th>
                     <th>Observações</th>
-                    <th>deletar</th>
+                    <th>Ações</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Nome Completo">João da Silva</td>
-                        <td data-label="Email">joao.silva@example.com</td>
-                        <td data-label="Telefone">(11) 91234-5678</td>
-                        <td data-label="Profissão">Desenvolvedor</td>
-                        <td data-label="Empresa">Empresa Exemplo Ltda</td>
-                        <td data-label="Cidade">São Paulo</td>
-                        <td data-label="Estado">SP</td>
-                        <td data-label="Data de Nascimento">1990-05-14</td>
-                        <td data-label="Observações">Contato fictício</td>
-                        <td data-label="Ações" id="edit-delete">Editar | Excluir</td>
-                    </tr>
-                </tbody>
+                <tbody></tbody>
             </table>
         </div>
     </div>

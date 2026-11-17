@@ -33,8 +33,10 @@ body{
 
 .box-modal{
     margin: auto;
-    width: 520px;
-    height: 520px;
+    width: 90%;
+    max-width: 520px;
+    min-height: 520px;
+    padding-bottom: 16px;
     background-color: var(--color-navbar);
     margin-top: 20px;
     border-radius: 7px;
@@ -79,10 +81,21 @@ input{
     right: 12px;
     cursor: pointer;
     color: red;
+    background: none;
+    border: none;
+    font: inherit;
 }
 
 .hidden{
     display: none;
+}
+
+.form-error{
+    color: #ffd2d2;
+}
+
+.cep-status{
+    font-size: 12px;
 }
 
 .box-navbar{
@@ -189,12 +202,24 @@ tbody tr:hover td:first-child{
     box-shadow: inset 3px 0 0 var(--color-primary);
 }
 
-#edit-delete{
+.search{
+    height: 32px;
+    margin-bottom: 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 7px;
+    font-family: var(--font-main);
+}
+
+.edit-delete button{
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
     cursor: pointer;
     transition: color var(--transition);
 }
 
-#edit-delete:hover{
+.edit-delete button:hover{
     color: var(--color-primary-hover);
     text-decoration: underline;
 }
