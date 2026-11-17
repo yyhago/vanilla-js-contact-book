@@ -31,6 +31,60 @@ body{
     color: #fff;
 }
 
+.box-modal{
+    margin: auto;
+    width: 520px;
+    height: 520px;
+    background-color: var(--color-navbar);
+    margin-top: 20px;
+    border-radius: 7px;
+    position: relative;
+}
+
+.inputs{
+    margin: 12px;
+    padding-top: 6px;
+}
+
+p{
+    margin: 8px;
+    color: #fff;
+}
+
+input{
+    width: 100%;
+    padding-left: 6px;
+}
+
+#data-send{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    width: 96%;
+    height: 32px;
+    background-color: var(--color-primary);
+    border-radius: 11px;
+    border-style: none;
+    cursor: pointer;
+    font-family: var(--font-main);
+    transition: background-color var(--transition), transform var(--transition), box-shadow var(--transition);
+    color: #fff;
+}
+
+.closed-modal{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+    color: red;
+}
+
+.hidden{
+    display: none;
+}
+
 .box-navbar{
     position: sticky;
     top: 0;
